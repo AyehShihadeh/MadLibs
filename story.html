@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="header-container">
+      <a href="index.html" id="home-arrow"><img src="IMAGES/back-arrow.png" alt=""></a>
+      <h1 class="main-title" style="margin-bottom: 0px;">
+        <img src="IMAGES/fantasy-book.png" alt="">
+        MAD LIBS!
+      </h1>
+    </div>
+    <h4 style="margin-top: 5px;"><i>A phrasal template word game</i></h4>
+    <hr style="width: 60%;">
+  
+  
+    <h2>Pick your story:</h2>
+
+    <div class="nav-bar">
+      <button class="nav-btn" onclick="
+        displayShortStories();
+        let inputContainer = document.querySelector('.input-container');
+        inputContainer.replaceChildren();
+        inputContainer.classList.remove('input-container-bg2');
+        btns.replaceChildren();
+      ">Short</button>
+
+      <button class="nav-btn" onclick="
+        inputContainer = document.querySelector('.input-container');
+        inputContainer.replaceChildren();
+        inputContainer.classList.remove('input-container-bg2');
+        displayMediumStories();
+        btns.replaceChildren();
+      ">Medium</button>
+
+      <button class="nav-btn" onclick="
+        inputContainer = document.querySelector('.input-container');
+        inputContainer.replaceChildren();
+        inputContainer.classList.remove('input-container-bg2');
+        displayLongStories();
+        btns.replaceChildren();
+      ">Long</button>
+
+      <button class="nav-btn" onclick="
+        inputContainer = document.querySelector('.input-container');
+        inputContainer.replaceChildren();
+        inputContainer.classList.remove('input-container-bg2');
+        displayAllStories();
+        btns.replaceChildren();
+      ">All</button>
+    </div>
+
+    <div class="story-container">
+      <button class="story-btn green-btn" onclick="
+        StoryInputArea('doctor office');
+        changeInputContainerBG();
+      ">doctor office</button>
+  
+      <button class="story-btn blue-btn" onclick="
+        StoryInputArea('beach day');
+        changeInputContainerBG();
+      ">beach day</button>
+  
+      <button class="story-btn red-btn" onclick="
+        StoryInputArea('homework');
+        changeInputContainerBG();
+      ">what we do in the zoo</button>
+
+      <button class="story-btn purple-btn" onclick="
+        StoryInputArea('doctor office');
+        changeInputContainerBG();
+      ">Pinnaples</button>
+
+      <button class="story-btn orange-btn" onclick="
+        StoryInputArea('beach day');
+        changeInputContainerBG();
+      ">New Pet</button>
+
+      <button class="story-btn yellow-btn" onclick="
+      StoryInputArea('homework');
+      changeInputContainerBG();
+      ">On My Jog</button>
+
+      <button class="story-btn green-btn" onclick="
+        StoryInputArea('homework');
+        changeInputContainerBG();
+      ">My Favorite Food</button>
+
+      <button class="story-btn blue-btn" onclick="
+        StoryInputArea('doctor office');
+        changeInputContainerBG();
+      ">Invisible Man</button>
+  
+      <button class="story-btn red-btn" onclick="
+        StoryInputArea('beach day');
+        changeInputContainerBG();
+      ">Bugs Are Cool!</button>
+  
+      <button class="story-btn purple-btn" onclick="
+        StoryInputArea('homework');
+        changeInputContainerBG();
+      ">Crazy Hair</button>
+
+      <button class="story-btn orange-btn" onclick="
+      StoryInputArea('homework');
+      changeInputContainerBG();
+      ">On My Jog</button>
+
+      <button class="story-btn yellow-btn" onclick="
+      StoryInputArea('homework');
+      changeInputContainerBG();
+      ">On My Jog</button>
+    </div>
+  
+  
+    <div class="input-container input-container-bg1" id="input-container">
+      <div class="inputArea"></div>
+    </div>
+  
+    <div class="clear-gen-btns"></div>
+  
+    <div class="generatedParagraph generatedParagraph-bg1"></div> 
+
+    <footer class="footer1">
+      <a href="https://ayehshihadeh.github.io/AyehWeb/" target="_blank"> ©AYEH &nbsp;SHIHADEH</a>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
