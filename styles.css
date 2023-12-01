@@ -20,8 +20,8 @@ html, body{
   background-color: antiquewhite;
   width: 800px;
   height: fit-content;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   position:relative;
   border: double black 5px;
 }
@@ -330,6 +330,9 @@ div.inputArea input.input-word:hover{
   line-height: 30px;
   padding: 10px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .generatedParagraph-bg1{
