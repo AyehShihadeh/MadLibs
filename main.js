@@ -196,11 +196,11 @@ function StoryInputArea(story){
     word3 = document.querySelector('#w41');
     word4 = document.querySelector('#w42');
     word5 = document.querySelector('#w43');
-    word1 = document.querySelector('#w44');
-    word2 = document.querySelector('#w45');
-    word3 = document.querySelector('#w46');
-    word4 = document.querySelector('#w47');
-    word5 = document.querySelector('#w48');
+    word6 = document.querySelector('#w44');
+    word7 = document.querySelector('#w45');
+    word8 = document.querySelector('#w46');
+    word9 = document.querySelector('#w47');
+    word10 = document.querySelector('#w48');
 
     btns.innerHTML =`
     <button class="clear-btn" onclick="
@@ -224,7 +224,8 @@ function StoryInputArea(story){
       <input type="text" placeholder="number" class="input-word" id="w54">
       <input type="text" placeholder="verb ending in ing" class="input-word" id="w55">
       <input type="text" placeholder="body part" class="input-word" id="w56">
-      <input type="text" placeholder="adjective" class="input-word" id="w57">
+      <input type="text" placeholder="color" class="input-word" id="w57">
+      <input type="text" placeholder="adjective" class="input-word" id="w58xx">
     </div>
     `;
 
@@ -234,10 +235,11 @@ function StoryInputArea(story){
     word3 = document.querySelector('#w51');
     word4 = document.querySelector('#w52');
     word5 = document.querySelector('#w53');
-    word1 = document.querySelector('#w54');
-    word2 = document.querySelector('#w55');
-    word3 = document.querySelector('#w56');
-    word4 = document.querySelector('#w57');
+    word6 = document.querySelector('#w54');
+    word7 = document.querySelector('#w55');
+    word8 = document.querySelector('#w56');
+    word9 = document.querySelector('#w57');
+    word10 = document.querySelector('#w58xx');
 
 
     btns.innerHTML =`
@@ -273,11 +275,11 @@ function StoryInputArea(story){
     word3 = document.querySelector('#w60');
     word4 = document.querySelector('#w61');
     word5 = document.querySelector('#w62');
-    word1 = document.querySelector('#w63');
-    word2 = document.querySelector('#w64');
-    word3 = document.querySelector('#w65');
-    word4 = document.querySelector('#w66');
-    word5 = document.querySelector('#w67');
+    word6 = document.querySelector('#w63');
+    word7 = document.querySelector('#w64');
+    word8 = document.querySelector('#w65');
+    word9 = document.querySelector('#w66');
+    word10 = document.querySelector('#w67');
 
     btns.innerHTML =`
     <button class="clear-btn" onclick="
@@ -299,6 +301,7 @@ function StoryInputArea(story){
       <input type="text" placeholder="adjective" class="input-word" id="w71">
       <input type="text" placeholder="verb" class="input-word" id="w72">
       <input type="text" placeholder="funny name" class="input-word" id="w73">
+      <input type="text" placeholder="animal" class="input-word" id="w74xx">
     </div>
     `;
 
@@ -307,7 +310,8 @@ function StoryInputArea(story){
     word3 = document.querySelector('#w70');
     word4 = document.querySelector('#w71');
     word5 = document.querySelector('#w72');
-    word5 = document.querySelector('#w73');
+    word6 = document.querySelector('#w73');
+    word7 = document.querySelector('#w74xx');
 
     btns.innerHTML =`
     <button class="clear-btn" onclick="
@@ -335,6 +339,7 @@ function StoryInputArea(story){
       <input type="text" placeholder="bug plural" class="input-word" id="w83">
       <input type="text" placeholder="food" class="input-word" id="w84">
       <input type="text" placeholder="adj" class="input-word" id="w85">
+      <input type="text" placeholder="number" class="input-word" id="w86xx">
     </div>
     `;
  
@@ -343,13 +348,15 @@ function StoryInputArea(story){
     word3 = document.querySelector('#w76');
     word4 = document.querySelector('#w77');
     word5 = document.querySelector('#w78');
-    word1 = document.querySelector('#w79');
-    word2 = document.querySelector('#w80');
-    word3 = document.querySelector('#w81');
-    word4 = document.querySelector('#w82');
-    word5 = document.querySelector('#w83');
-    word1 = document.querySelector('#w84');
-    word2 = document.querySelector('#w85');
+    word6 = document.querySelector('#w79');
+    word7 = document.querySelector('#w80');
+    word8 = document.querySelector('#w81');
+    word9 = document.querySelector('#w82');
+    word10 = document.querySelector('#w83');
+    word11 = document.querySelector('#w84');
+    word12 = document.querySelector('#w85');
+    word13 = document.querySelector('#w86xx');
+
 
     btns.innerHTML =`
     <button class="clear-btn" onclick="
@@ -425,37 +432,13 @@ function StoryInputArea(story){
       generateGameDuos();
     ">> GO MAD!</button>
     `;
-  }else if (story === 'idk'){
-    inputContainer.innerHTML = 
-    `<h2>Go Mad! Fill in the blank fields below:</h2>
-    <p class="alertMsg beforeMsg">Please fill in all prompts.</p>
-    <div class="inputArea">
-      <input type="text" placeholder="adjective" class="input-word" id="w21">
-      <input type="text" placeholder="verb" class="input-word" id="w22">
-      <input type="text" placeholder="adjective" class="input-word" id="w23">
-      <input type="text" placeholder="noun" class="input-word" id="w24">
-      <input type="text" placeholder="silly word" class="input-word" id="w25">
-    </div>
-    `;
-
-    word1 = document.querySelector('#w21');
-    word2 = document.querySelector('#w22');
-    word3 = document.querySelector('#w23');
-    word4 = document.querySelector('#w24');
-    word5 = document.querySelector('#w25');
-
-    btns.innerHTML =`
-    <button class="clear-btn" onclick="
-      clearInputs();
-    ">CLEAR</button>
-
-    <button class="generate-btn" onclick="
-      generateidk();
-    ">> GO MAD!</button>
-    `;
   }
 }
 
+//
+//
+//
+//GENERATE EACH STORY FUNCTIONS
 function generateDoctorOffice(){
 
   alertShort();
@@ -494,7 +477,7 @@ function generateMysteryPortal(){
 }
 
 function generateZoo(){
-  alertShort();
+  alertLong13();
   if(inputAlert === true){
     return;
   }
@@ -528,7 +511,7 @@ function generatePinapples(){
 }
 
 function generatePets(){
-  alertShort();
+  alertMedium();
   if(inputAlert === true){
     return;
   }
@@ -544,7 +527,7 @@ function generatePets(){
 }
 
 function generateJog(){
-  alertShort();
+  alertMedium();
   if(inputAlert === true){
     return;
   }
@@ -554,13 +537,13 @@ function generateJog(){
    paragraph.innerHTML = 
     `
     <h2>ON A JOG</h2>
-    <p>While tying my <span class="highlight">${word1.value}</span> sneakers, I feel a surge of excitement for this run. I peeked a look outside and noticed that it was <span class="highlight">${word2.value}</span>. oh well. The moment I hit the pavement, I realized my route was taking me through a(n) <span class="highlight">${word3.value}</span> obstacle course, from acrobatic <span class="highlight">${word4.value}</span> to rouge skateboarders riding <span class="highlight">${word5.value}</span> boards. sick. I completed the course within  <span class="highlight">${word6.value}</span> minutes. With sweat <span class="highlight">${word7.value}</span> down my <span class="highlight">${word8.value}</span>, I finally returned home with a newfound appreciation for the unpredictability of a truly <span class="highlight">${word9.value}</span> jog.</p>
+    <p>While tying my <span class="highlight">${word1.value}</span> sneakers, I feel a surge of excitement for this run. I peeked a look outside and noticed that it was <span class="highlight">${word2.value}</span>. Oh well. The moment I hit the pavement, I realized my route was taking me through a(n) <span class="highlight">${word3.value}</span> obstacle course, from acrobatic <span class="highlight">${word4.value}</span> to rouge skateboarders riding <span class="highlight">${word5.value}</span> boards. sick. I completed the course within  <span class="highlight">${word6.value}</span> minutes. With sweat <span class="highlight">${word7.value}</span> down my <span class="highlight">${word8.value}</span>, I finally returned to my <span class="highlight">${word9.value}</span> home with a newfound appreciation for the unpredictability of a truly <span class="highlight">${word10.value}</span> jog.</p>
     `;
    giveParagraphBG();
 }
 
 function generateFood(){
-  alertShort();
+  alertMedium();
   if(inputAlert === true){
     return;
   }
@@ -576,7 +559,7 @@ function generateFood(){
 }
 
 function generateSuperPower(){
-  alertShort();
+  alertShort7();
   if(inputAlert === true){
     return;
   }
@@ -586,13 +569,13 @@ function generateSuperPower(){
    paragraph.innerHTML = 
     `
     <h2>SUPER POWERr</h2>
-    <p>I’m a human so I don’t have superpowers, but if I did mine would be the ability to <span class="highlight">${word1.value}</span>. I would use this power to <span class="highlight">${word2.value}</span> <span class="highlight">${word3.value}</span>. Just imagine how fun that would be! My superhero cape would be <span class="highlight">${word4.value}</span> and it’ll <span class="highlight">${word5.value}</span> in the wind. And I can’t be a hero without a nickname. I can imagine the people calling me <span class="highlight">${word6.value}</span>.</p>
+    <p>I’m a human so I don’t have superpowers, but if I did mine would be the ability to <span class="highlight">${word1.value}</span>. I would use this power to <span class="highlight">${word2.value}</span> <span class="highlight">${word3.value}</span>. Just imagine how fun that would be! My superhero cape would be <span class="highlight">${word4.value}</span> and it’ll <span class="highlight">${word5.value}</span> in the wind. And I can’t be a hero without a nickname. I can imagine the people calling me <span class="highlight">${word6.value}</span>. Maybe i'll even have a side kick <span class="highlight">${word7.value}</span>!</p>
     `;
     giveParagraphBG();
 }
 
 function generateBugs(){
-  alertShort();
+  alertLong13();
   if(inputAlert === true){
     return;
   }
@@ -602,13 +585,13 @@ function generateBugs(){
    paragraph.innerHTML = 
     `
     <h2>BUGS ARE COOL</h2>
-    <p>It was a warm day outside, so I decided to forage for some cute bugs! I put on my <span class="highlight">${word1.value}</span> covered rubber boots and head to the forest nearby. I look at the floor and flip over the first rock I saw. Under I find a <span class="highlight">${word1.value}</span> <span class="highlight">${word1.value}</span>. I slowly <span class="highlight">${word1.value}</span> down to pick up the bug with my <span class="highlight">${word1.value}</span> hands. It crawls onto me without hesitation. I think it loves me. Next I walk over to a little pond. I see some squirming bugs in there. I cup my hands and scoop up some water. With a closer look, I see a tiny <span class="highlight">${word1.value}</span>. This one is missing a <span class="highlight">${word1.value}</span>. I think I’ll name him <span class="highlight">${word1.value}</span>. Lastly, I head to a very tall tree and take out my magnifying glass which I got from my old friend <span class="highlight">${word1.value}</span>. I hold it up to my eye and see a group of <span class="highlight">${word1.value}</span> carrying <span class="highlight">${word1.value}</span> to their home in the tree! What a beautiful sight. Time for me to go home. It was a <span class="highlight">${word1.value}</span> adventure, and I will do it again tomorrow. </p>
+    <p>It was a warm day outside, so I decided to forage for some cute bugs! I put on my <span class="highlight">${word1.value}</span> covered rubber boots and head to the forest nearby. I look at the floor and flip over the first rock I saw. Under I find a <span class="highlight">${word2.value}</span> <span class="highlight">${word3.value}</span>. I slowly <span class="highlight">${word4.value}</span> down to pick up the bug with my <span class="highlight">${word5.value}</span> hands. It crawls onto me without hesitation. I think it loves me. Next I walk over to a little pond. I see some squirming bugs in there. I cup my hands and scoop up some water. With a closer look, I see a tiny <span class="highlight">${word6.value}</span>. This one is missing a <span class="highlight">${word7.value}</span>. I think I’ll name him <span class="highlight">${word8.value}</span>. Lastly, I head to a very tall tree and take out my magnifying glass which I got from my old friend <span class="highlight">${word9.value}</span>. I hold it up to my eye and see a group of <span class="highlight">${word10.value}</span> carrying <span class="highlight">${word11.value}</span> to their home in the tree! What a beautiful sight. Time for me to go home. It was a <span class="highlight">${word12.value}</span> adventure, and I will do it again in <span class="highlight">${word13.value}</span> days! </p>
     `;
     giveParagraphBG();
 }
 
 function generateCrazyHair(){
-  alertShort();
+  alertShort7();
   if(inputAlert === true){
     return;
   }
@@ -618,13 +601,13 @@ function generateCrazyHair(){
    paragraph.innerHTML = 
     `
     <h2CRAZY HAIR</h2>
-    <p>Today is crazy hair day at school, and I have to win my rival named <span class="highlight">${word1.value}</span>. She said my  <span class="highlight">${word2.value}</span> looks  <span class="highlight">${word3.value}</span> at yesterday’s lunch. I start  <span class="highlight">${word4.value}</span> my hair to get it messy. Then I pick up my  <span class="highlight">${word5.value}</span> Hairspray and  <span class="highlight">${word6.value}</span> it all over my head. Perfect. I walked into the classroom and see that the voting is about to begin. Furthermore, my rival  <span class="highlight">${word7.value}</span> is absent! And I won with  <span class="highlight">${word1.value}</span> votes!</p>
+    <p>Today is crazy hair day at school, and I have to win my rival named <span class="highlight">${word1.value}</span>. She said my  <span class="highlight">${word2.value}</span> looks  <span class="highlight">${word3.value}</span> at yesterday’s lunch. I start  <span class="highlight">${word4.value}</span> my hair to get it messy. Then I pick up my  <span class="highlight">${word5.value}</span> Hairspray and  <span class="highlight">${word6.value}</span> it all over my head. Perfect. I walked into the classroom and see that the voting is about to begin. Furthermore, my rival  <span class="highlight">${word1.value}</span> is absent! And I won with  <span class="highlight">${word7.value}</span> votes!</p>
     `;
     giveParagraphBG();
 }
 
 function generateGameDuos(){
-  alertShort();
+  alertShort7();
   if(inputAlert === true){
     return;
   }
@@ -795,7 +778,7 @@ function displayAllStories(){
 <button class="story-btn green-btn" onclick="
   StoryInputArea('food');
   changeInputContainerBG();
-">My Favorite Food</button>
+">Making Food</button>
 
 <button class="story-btn blue-btn" onclick="
   StoryInputArea('super power');
@@ -844,6 +827,23 @@ function alertShort(){
     
 }
 
+function alertShort7(){
+  //if an input is left blank alert user ...
+  let alertMsg = document.querySelector('.alertMsg');
+  if(word1.value === '' || word2.value === '' || word3.value === '' || word4.value === '' || word5.value === '' || word6.value === '' || word7.value === ''){
+    alertMsg.classList.remove('beforeMsg');
+    alertMsg.classList.add('afterMsg');
+    setTimeout(function(){
+      alertMsg.classList.remove('afterMsg');
+      alertMsg.classList.add('beforeMsg');
+    }, 3000);
+     inputAlert=true;
+  }else{
+    inputAlert=false;
+  }
+  
+}
+
 function alertMedium(){
   //if an input is left blank alert user ...
   let alertMsg = document.querySelector('.alertMsg');
@@ -866,6 +866,24 @@ function alertLong(){
   if(word1.value === '' || word2.value === '' || word3.value === '' || word4.value === '' || word5.value === '' ||
     word6.value === '' || word7.value === '' || word8.value === '' || word9.value === '' || word10.value === '' ||
     word11.value === '' || word12.value === '' || word13.value === '' || word14.value === '' || word15.value === ''){
+    alertMsg.classList.remove('beforeMsg');
+    alertMsg.classList.add('afterMsg');
+    setTimeout(function(){
+      alertMsg.classList.remove('afterMsg');
+      alertMsg.classList.add('beforeMsg');
+    }, 3000);
+    inputAlert=true;
+  }else{
+    inputAlert=false;
+  }
+}
+
+function alertLong13(){
+  //if an input is left blank alert user ...
+  let alertMsg = document.querySelector('.alertMsg');
+  if(word1.value === '' || word2.value === '' || word3.value === '' || word4.value === '' || word5.value === '' ||
+    word6.value === '' || word7.value === '' || word8.value === '' || word9.value === '' || word10.value === '' ||
+    word11.value === '' || word12.value === '' || word13.value === ''){
     alertMsg.classList.remove('beforeMsg');
     alertMsg.classList.add('afterMsg');
     setTimeout(function(){
