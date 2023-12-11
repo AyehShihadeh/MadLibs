@@ -253,7 +253,7 @@ html, body{
   margin: 1px;
 }
 
-.nav-btn:hover{
+.nav-btn:hover, .nav-btn:focus{
   background-color: black;
   color: beige;
 }
